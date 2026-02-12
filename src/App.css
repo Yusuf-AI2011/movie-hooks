@@ -36,7 +36,7 @@ body {
   width: 100%;
   /* border: 2px solid red; */
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   flex-direction: row;
   flex-wrap: wrap;
@@ -69,4 +69,21 @@ body {
 
 .year {
   text-align: center;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.submit {
+  width: 100px;
+  height: 30px;
+  border-radius: 10px;
+  border: 2px solid blueviolet;
+  background-color: #202020;
+  color: blueviolet;
 }
