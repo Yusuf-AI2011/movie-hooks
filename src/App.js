@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./App.css";
 import axios from "axios";
+import MovieList from "./components/MovieList";
 
 const App = () => {
   const [name, setName] = useState("");
