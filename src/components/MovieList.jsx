@@ -1,5 +1,4 @@
 import React from "react";
-import notfoundImage from "../image/not-found-image.png";
 const MovieList = ({ data }) => {
   // console.log(data);
 
@@ -11,10 +10,9 @@ const MovieList = ({ data }) => {
         // console.log(Poster);
         // console.log(Title);
         // console.log(Year);
-        
 
         return (
-          <div key={Poster}>
+          <div key={imdbID}>
             <div className="container">
               <img src={Poster} alt="img" className="image" />
               <h1 className="title">{Title}</h1>

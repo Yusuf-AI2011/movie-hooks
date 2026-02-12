@@ -1,10 +1,8 @@
 import React, { useEffect, useState } from "react";
-import MovieList from "./components/MovieList";
 import "./App.css";
 import axios from "axios";
 
 const App = () => {
-  let api = `https://www.omdbapi.com/?s=panda&apikey=3e658e50`;
   const [name, setName] = useState("");
   const [data, setData] = useState([]);
 
@@ -14,8 +12,7 @@ const App = () => {
       setData(data?.data?.Search);
     });
     console.log("submit ishladi");
-    const search = document.querySelector(".search");
-    search.value = "";
+    setName("");
   }
 
   useEffect(() => {
