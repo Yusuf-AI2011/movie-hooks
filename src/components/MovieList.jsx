@@ -6,7 +6,7 @@ const MovieList = ({ data }) => {
     <>
       {data.map((item) => {
         // console.log(item);
-        const { Poster, Title, Year } = item;
+        const { Poster, Title, Year, imdbID} = item;
         // console.log(Poster);
         // console.log(Title);
         // console.log(Year);
