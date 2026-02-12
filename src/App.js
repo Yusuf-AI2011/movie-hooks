@@ -9,7 +9,7 @@ const App = () => {
   const [data, setData] = useState([]);
 
   function submit(e) {
-    api = `https://www.omdbapi.com/?s=${name}&apikey=3e658e50`;
+    let api = `https://www.omdbapi.com/?s=${name}&apikey=3e658e50`;
     axios.get(api).then((data) => {
       setData(data?.data?.Search);
     });
@@ -19,8 +19,9 @@ const App = () => {
   }
 
   useEffect(() => {
+    let api = `https://www.omdbapi.com/?s=panda&apikey=3e658e50`;
     axios.get(api).then((data) => {
-      setData(data?.data?.Search);
+      setData(data?.data?.Search || []);
     });
   }, []);
 
